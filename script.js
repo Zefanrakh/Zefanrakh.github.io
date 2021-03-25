@@ -2,27 +2,51 @@
 arrayShoppingCart = []
 
 // Stores All Food Object, Array of Object
-arrayFoods = []
+arrayFoods = [{
+    nama: "Cheesecake",
+    description: "Paket Cheesecake Mousse dengan variant rasa coklat, mangga, dan stroberi.",
+    harga: 35000,
+    linkFoto: '/img/Cheesecake.jpg',
+},
+{
+    nama: "Pudding",
+    description: "Paket Pudding dengan variant rasa coklat, cheese-biscuit, dan ubi ungu.",
+    harga: 50000,
+    linkFoto: '/img/Puding.jpg'
+}, {
+    nama: "Klapper Tart",
+    description: "Klapper Tart adalah makanan khas Manado, dengan campuran susu, mentega dan kelapa.",
+    harga: 20000,
+    linkFoto: '/img/klappertar.jpg'
+}]
 
-// Object dari makanan, kalo mau add makanan bisa pake format ini.
-foodObject = {
-    nama: '',
-    description: '',
-    harga: 0,
-    linkFoto: '',
+// TO DO List
+// Function 1: Nambah object foodObject dari arrayFood ke arrayShoppingCart. DONE
+// Function 2: Update shopping cart jika user mengubah data. Misalkan quantitynya dikurangin atau ditambah.
+// Function 3: Read arrayShoppingCart untu mengetahui sudah ada barang apa saja di shopping cart.
+// Function 4: Hapus data pada arrayShoppingCart jika user klik delete pada item tersebut.
+
+function addToCart(namaDOM, quantity = 1) {
+    for (let i = 0; i < arrayFoods.length; i++) {
+        if (namaDOM === arrayFoods[i].nama) {
+            arrayFoods[i].quantity = quantity
+            arrayShoppingCart.push(arrayFoods[i])
+        }
+    }
 }
 
-// // Test Code
-// foodObject.nama = "Apple Pudding";
-// foodObject.description = "Pudding rasa apple.";
-// foodObject.harga = 25000;
-// foodObject.linkFoto = '/img/bely6.jpg';
-// arrayFoods.push(foodObject);
+function updateCartPlus(name) {
+    for (const key of arrayShoppingCart) {
+        console.log(key)
+    }
+}
 
-// foodObject.nama = "Manggo Pudding";
-// foodObject.description = "Pudding rasa Manggo.";
-// foodObject.harga = 35000;
-// foodObject.linkFoto = '/img/bely6.jpg';
-// arrayFoods.push(foodObject);
+function updateCartMinus(name) {
+    for (const key of arrayShoppingCart) {
+        console.log(key)
+    }
+}
 
-// console.log(arrayFoods);
+// Add To Cart mendapatkan argument dari DOM. Argument: Nama, Quantity
+addToCart('Cheesecake', 5)
+console.log(arrayShoppingCart)
