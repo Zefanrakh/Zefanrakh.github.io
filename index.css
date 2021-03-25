@@ -1,3 +1,81 @@
-body {
-  background-color: khaki;
+.gede {
+  background-color: #ececec;
+  height: 100vh;
+  width: 100vw;
+  /* position: absolute; */
 }
+
+.overflow {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  /* margin-top: 50px; */
+}
+
+.sembunyi {
+  position: absolute;
+}
+.container-fluid {
+}
+#gambar1 {
+  background-image: url(./img/bely2.jpg);
+  height: 700px;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
+
+#gambar2 {
+  background-image: url(./img/bely6.jpg);
+  height: 700px;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
+
+#gambar3 {
+  background-image: url(./img/bely5.jpg);
+  height: 700px;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
+
+.produk {
+  width: 100vw;
+  margin: auto;
+  position: absolute;
+  margin-top: 40px;
+  /* background-color: black; */
+}
+
+.tampilProduk {
+  width: 80vw;
+  /* background-color: tomato; */
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  /* flex-direction: row; */
+}
+
+.tampilProduk .card {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.cartQty form {
+  display: flex;
+}
+/* .gambarProduk {
+  width: 286.5px;
+  min-height: 180px;
+  max-height: 180px;
+  background-image: url(./img/klappertar.jpg);
+  background-size: cover;
+  background-position: center;
+} */
+
+/* .card {
+  min-width: 120px;
+} */
