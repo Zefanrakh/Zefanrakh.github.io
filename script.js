@@ -22,10 +22,6 @@ arrayFoods = [{
 
 // TO DO List
 // Function 1: Nambah object foodObject dari arrayFood ke arrayShoppingCart. DONE
-// Function 2: Update shopping cart jika user mengubah data. Misalkan quantitynya dikurangin atau ditambah.
-// Function 3: Read arrayShoppingCart untu mengetahui sudah ada barang apa saja di shopping cart.
-// Function 4: Hapus data pada arrayShoppingCart jika user klik delete pada item tersebut.
-
 function addToCart(namaDOM, quantity = 1) {
     for (let i = 0; i < arrayFoods.length; i++) {
         if (namaDOM === arrayFoods[i].nama) {
@@ -34,19 +30,44 @@ function addToCart(namaDOM, quantity = 1) {
         }
     }
 }
+// Function 2: Update shopping cart jika user mengubah data. Misalkan quantitynya dikurangin atau ditambah.
 
-function updateCartPlus(name) {
+function updateCartPlus(namaDOM) {
     for (const key of arrayShoppingCart) {
-        console.log(key)
+        if (namaDOM===key.nama){
+            key.quantity++
+        }
     }
 }
 
-function updateCartMinus(name) {
+function updateCartMinus(namaDOM) {
     for (const key of arrayShoppingCart) {
-        console.log(key)
+        if (namaDOM===key.nama){
+            key.quantity--
+        }
+    }
+}
+// Function 3: Read arrayShoppingCart untu mengetahui sudah ada barang apa saja di shopping cart.
+// Function 4: Hapus data pada arrayShoppingCart jika user klik delete pada item tersebut.
+
+function deleteCart(namaDOM) {
+    for (let i = 0; i < arrayShoppingCart.length; i++) {
+        // delete arrayShoppingCart[i];
+        if(namaDOM===arrayShoppingCart[i].nama){
+            arrayShoppingCart.splice(i,1)
+        }
+        
+        
     }
 }
 
 // Add To Cart mendapatkan argument dari DOM. Argument: Nama, Quantity
 addToCart('Cheesecake', 5)
-console.log(arrayShoppingCart)
+addToCart('Pudding', 5)
+// updateCartPlus('Cheesecake')
+// console.log(arrayShoppingCart)
+// updateCartMinus('Cheesecake')
+// console.log(arrayShoppingCart, 'after')
+
+deleteCart('Cheesecake')
+console.log(arrayShoppingCart, 'after')
