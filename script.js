@@ -16,13 +16,13 @@ foodObject = {
 // foodObject.nama = "Apple Pudding";
 // foodObject.description = "Pudding rasa apple.";
 // foodObject.harga = 25000;
-// foodObject.linkFoto = '/assets/bely6.jpg';
+// foodObject.linkFoto = '/img/bely6.jpg';
 // arrayFoods.push(foodObject);
 
 // foodObject.nama = "Manggo Pudding";
 // foodObject.description = "Pudding rasa Manggo.";
 // foodObject.harga = 35000;
-// foodObject.linkFoto = '/assets/bely6.jpg';
+// foodObject.linkFoto = '/img/bely6.jpg';
 // arrayFoods.push(foodObject);
 
 // console.log(arrayFoods);
