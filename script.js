@@ -92,7 +92,7 @@ function updateCart() {
     for (let i = 0; i < arrayShoppingCart.length; i++) {
 
         let divUpdateCart = document.createElement('div')
-        divUpdateCart.innerHTML = `<div class="card mb-3" style="max-width: 540px;">
+        divUpdateCart.innerHTML = `<div class="card mb-3">
             <div class="row g-0">
             <div class="col-md-4">
                 <img src="${arrayShoppingCart[i].linkFoto}" alt="..." style="max-height: 150px;">
@@ -155,14 +155,22 @@ function loadContent() {
     for (i = 0; i < arrayFoods.length; i++) {
         let divCard = document.createElement('div')
         divCard.innerHTML = `
-            <div class="card" style="min-width: 200px; max-width: 200px;">
-            <img src="${arrayFoods[i].linkFoto}" class="card-img-top" alt="...">
+            <div class="card" style="min-width: 250px; max-width: 250px; box-shadow:0px 4px 5px #7E7E7E;">
+                <div class="card bg-dark text-white" style="width:100%; margin-left:0px; margin-right:0px; border-style:none">
+                <img src="${arrayFoods[i].linkFoto}" class="card-img-top" alt="...">
+                <div class="card-img-overlay" style="background-color:black;">
+                    
+                    <h5 class="card-text" style="margin-top:30%; ">${arrayFoods[i].description}</h5>
+                    
+                </div>
+                </div>
+            
             <div class="card-body">
             <h5 class="card-title">${arrayFoods[i].nama}</h5>
-            <p class="card-text">${arrayFoods[i].description}</p>
+            
             <h6 class="card-price">Rp. ${arrayFoods[i].harga}</h6>
-            <div class="cartQty">
-                <form action="">
+            <div class="cartQty" >
+                <form action="" style="justify-content: center;">
                 <button type="submit" class="btn btn-primary" onclick= "addToCart(value, qty.value, event)" value="${arrayFoods[i].nama}"  style="padding: 6px; height: fit-content; margin-right: 18px;">Add to Cart</button>
                 <input id="qty" type="number" placeholder="qty" style="width: 50px; padding: 5px; height: fit-content" min=1>
                 </form>
@@ -175,3 +183,13 @@ function loadContent() {
 }
 
 loadContent()
+
+function mySearch() {
+    let pattern = document.getElementById('search').value
+    if (pattern.length >= 3) {
+        pattern = pattern.toLowerCase()
+        let filtered = arrayFoods.filter(function (str) { return str.nama.toLowerCase().includes(pattern) })
+        console.log(filtered)
+    }
+}
+// $('#myModal').appendTo("body") 

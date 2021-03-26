@@ -1,10 +1,13 @@
 .gede {
-  background-color: #ececec;
-  height: 100vh;
+  background-image: url(./img/polaroid/polaroid.png);
+  height: 150vh;
   width: 100vw;
   /* position: absolute; */
 }
-
+/* .navbar {
+  position: sticky;
+  z-index: 10;
+} */
 .overflow {
   height: 500px;
   overflow: hidden;
@@ -12,14 +15,14 @@
   /* margin-top: 50px; */
 }
 
-.sembunyi {
+/* .sembunyi {
   position: absolute;
-}
+} */
 .container-fluid {
 }
 #gambar1 {
   background-image: url(./img/bely2.jpg);
-  height: 700px;
+  height: 900px;
   width: 100vw;
   background-position: center;
   background-size: cover;
@@ -27,7 +30,7 @@
 
 #gambar2 {
   background-image: url(./img/bely6.jpg);
-  height: 700px;
+  height: 900px;
   width: 100vw;
   background-position: center;
   background-size: cover;
@@ -35,7 +38,7 @@
 
 #gambar3 {
   background-image: url(./img/bely5.jpg);
-  height: 700px;
+  height: 900px;
   width: 100vw;
   background-position: center;
   background-size: cover;
@@ -44,7 +47,7 @@
 .produk {
   width: 100vw;
   margin: auto;
-  position: absolute;
+  /* position: absolute; */
   margin-top: 40px;
   /* background-color: black; */
 }
@@ -56,6 +59,7 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
   /* flex-direction: row; */
 }
 
@@ -66,6 +70,13 @@
 
 .cartQty form {
   display: flex;
+}
+.card-img-overlay {
+  opacity: 0;
+  transition: 0.6s;
+}
+.card-img-overlay:hover {
+  opacity: 0.5;
 }
 /* .gambarProduk {
   width: 286.5px;
