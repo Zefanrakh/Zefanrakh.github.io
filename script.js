@@ -27,13 +27,16 @@ function addToCart(namaDOM, quantity = 1, event) {
     event.preventDefault()
     for (let i = 0; i < arrayFoods.length; i++) {
         let udahAda=false;
+        let nilai = 0;
         for (value of arrayShoppingCart){
             if (namaDOM===value.nama){
                 udahAda=true
+                nilai = value;
+                console.log(nilai)
             }   
         }
         if (udahAda){
-            value.quantity+=quantity
+            nilai.quantity+=quantity
             break;
 
         }else if (namaDOM === arrayFoods[i].nama) {
