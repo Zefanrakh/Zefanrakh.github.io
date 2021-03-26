@@ -52,7 +52,7 @@
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <button class="btn btn-outline-success" onclick="updateCart()" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <!-- <img src="" alt=""> -->
                 <span class="material-icons">
                   shopping_cart
@@ -63,11 +63,11 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLabel">shopping_cart</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <button type="button"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <!----------------------------------------------------->
-                      <div class="card mb-3" style="max-width: 540px;">
+                      <!-- <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="./img/Cheesecake.jpg" alt="..." style="max-height: 150px;">
@@ -92,9 +92,9 @@
                             <button type="button" class="btn btn-danger" style="margin-top: 5px;">remove item</button>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                       <!----------------------------------------------------->
-                      <div class="card mb-3" style="max-width: 540px;">
+                      <!-- <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="./img/Cheesecake.jpg" alt="..." style="max-height: 150px;">
@@ -119,12 +119,12 @@
                             <button type="button" class="btn btn-danger" style="margin-top: 5px;">remove item</button>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                       <!----------------------------------------------------->
                     </div>
                     <!----------------------------------------------------->
                     <div class="modal-footer" style="display: block;">
-                      <div style="display: flex;"><h3>Total = Rp. <h3 id="total">500</h3></h3></div>
+                      <div style="display: flex;"><h3>Total = Rp. <h3 id="total"></h3></h3></div>
                       <div class="modal-footer" style="display: flex;">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       <button type="button" class="btn btn-primary">Checkout</button>
@@ -168,7 +168,7 @@
       <div class="produk">
         <div class="tampilProduk">
           <!-- <div class="keTengah"> -->
-            <div class="card" style="min-width: 200px; max-width: 200px;">
+            <!-- <div class="card" style="min-width: 200px; max-width: 200px;">
               
               <img src="./img/Cheesecake.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -183,7 +183,7 @@
                 </div>
                 
               </div>
-            </div>
+            </div> -->
             <!-- <div class="card" style="min-width: 180px; max-width: 180px;">
               
               <img src="./img/klappertar.jpg" class="card-img-top" alt="...">
@@ -216,5 +216,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
