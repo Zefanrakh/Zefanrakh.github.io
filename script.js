@@ -87,6 +87,9 @@ function clearCard() {
 
 // Function 3: Read arrayShoppingCart untuk mengetahui sudah ada barang apa saja di shopping cart.
 function updateCart() {
+    // let reset = document.getElementsByClassName("modal-backdrop")[0];
+
+    // console.log(reset)
     let domCart = document.getElementsByClassName("modal-body")[0];
     domCart.innerHTML = '';
     for (let i = 0; i < arrayShoppingCart.length; i++) {
@@ -148,7 +151,7 @@ function deleteCart(namaDOM) {
     }
     updateCart()
 }
-
+// /*  */
 function loadContent() {
     let cardBody = document.getElementsByClassName('tampilProduk')[0];
 
@@ -156,14 +159,14 @@ function loadContent() {
         let divCard = document.createElement('div')
         divCard.innerHTML = `
             <div class="card" style="min-width: 250px; max-width: 250px; box-shadow:0px 4px 5px #7E7E7E;">
-                <div class="card bg-dark text-white" style="width:100%; margin-left:0px; margin-right:0px; border-style:none">
-                <img src="${arrayFoods[i].linkFoto}" class="card-img-top" alt="...">
-                <div class="card-img-overlay" style="background-color:black;">
-                    
-                    <h5 class="card-text" style="margin-top:30%; ">${arrayFoods[i].description}</h5>
-                    
-                </div>
-                </div>
+            <div class="card bg-dark text-white" style="width:100%; margin-left:0px; margin-right:0px; border-style:none">
+                             <img src="${arrayFoods[i].linkFoto}" class="card-img-top" alt="...">
+                             <div class="card-img-overlay" style="background-color:black;">
+                                
+                                 <h5 class="card-text" style="margin-top:30%; ">${arrayFoods[i].description}</h5>
+                                
+                             </div>
+                             </div>
             
             <div class="card-body">
             <h5 class="card-title">${arrayFoods[i].nama}</h5>

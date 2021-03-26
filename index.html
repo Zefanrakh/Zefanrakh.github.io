@@ -17,7 +17,7 @@
 <!--  -->
 <!--  -->
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="opacity:0.8">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#" style="margin-left: 40%;"><img src="./img/logo.png" style="height: 100px;" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -25,31 +25,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent" style="max-width: 350px;">
-        <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul> -->
+        
         <form class="d-flex">
           <input class="form-control me-2 basicAutoComplete" type="search" placeholder="Search" id="search" aria-label="Search" oninput="mySearch()" autocomplete="on">
           <button class="btn btn-outline-success" onclick="updateCart()" type="button" data-bs-toggle="modal"
@@ -59,9 +35,9 @@
               shopping_cart
             </span>
           </button>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">shopping_cart</h5>
@@ -69,59 +45,7 @@
                 </div>
                 <div class="modal-body">
                   <!----------------------------------------------------->
-                  <!-- <div class="card mb-3" style="max-width: 540px;">
-                      <div class="row g-0">
-                        <div class="col-md-4">
-                          <img src="./img/Cheesecake.jpg" alt="..." style="max-height: 150px;">
-                        </div>
-                        <div class="col-md-4">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text"></p>
-                            <p class="card-text"><small class="text-muted">Rp. 1000000</small></p>
-                            <div class="card-text" style="display: flex;">
-                              <button type="button" style="border: none; background-color: white; margin-right: 5px;"><span class="material-icons">
-                                remove_circle_outline
-                                </span></button>
-                              <div style="margin-top: 6px;"><label for="" style="width:40px"><h4>1</h4></label></div>
-                              <button type="button" style="border: none; background-color: white;"><span class="material-icons">
-                                add_circle_outline
-                                </span></button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4" style="text-align: right; padding-right: 5px;">
-                          <button type="button" class="btn btn-danger" style="margin-top: 5px;">remove item</button>
-                        </div>
-                      </div>
-                    </div> -->
-                  <!----------------------------------------------------->
-                  <!-- <div class="card mb-3" style="max-width: 540px;">
-                      <div class="row g-0">
-                        <div class="col-md-4">
-                          <img src="./img/Cheesecake.jpg" alt="..." style="max-height: 150px;">
-                        </div>
-                        <div class="col-md-4">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text"></p>
-                            <p class="card-text"><small class="text-muted">Rp. 1000000</small></p>
-                            <div class="card-text" style="display: flex;">
-                              <button type="button" style="border: none; background-color: white; margin-right: 5px;"><span class="material-icons">
-                                remove_circle_outline
-                                </span></button>
-                              <div style="margin-top: 6px;"><label for="" style="width:40px"><h4>100</h4></label></div>
-                              <button type="button" style="border: none; background-color: white;"><span class="material-icons">
-                                add_circle_outline
-                                </span></button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4" style="text-align: right; padding-right: 5px;">
-                          <button type="button" class="btn btn-danger" style="margin-top: 5px;">remove item</button>
-                        </div>
-                      </div>
-                    </div> -->
+                  
                   <!----------------------------------------------------->
                 </div>
                 <!----------------------------------------------------->
@@ -146,19 +70,19 @@
     </div>
   </nav>
   <div class="gede">
-    <!-- <div class="background"></div> -->
+    
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-top: 0px;">
       <div class="overflow">
         <div class="sembunyi">
           <div class="carousel-inner">
             <div id="gambar1" class="carousel-item active">
-              <!-- <img src="./img/bely2.jpg" class="d-block w-100" alt="..."> -->
+              
             </div>
             <div id="gambar2" class="carousel-item">
-              <!-- <img src="./img/bely6.jpg" class="d-block w-100" alt="..."> -->
+              
             </div>
             <div id="gambar3" class="carousel-item">
-              <!-- <img src="./img/klappertar.jpg" class="d-block w-100" alt="..."> -->
+              
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -178,57 +102,11 @@
 
     <div class="produk">
       <div class="tampilProduk">
-        <!-- <div class="keTengah"> -->
-        <!-- <div class="card" style="min-width: 200px; max-width: 200px;">
-              
-              <img src="./img/Cheesecake.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Cheesecake</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h6 class="card-price">Rp. 800.000</h6>
-                <div class="cartQty">
-                  <form action="">
-                    <button type="submit" class="btn btn-primary" style="padding: 6px; height: fit-content; margin-right: 18px;">Add to Cart</button>
-                    <input id="qty" type="number" placeholder="qty" style="width: 50px; padding: 5px; height: fit-content" min=0>
-                  </form>
-                </div>
-                
-              </div>
-            </div> -->
-        <!-- <div class="card" style="min-width: 180px; max-width: 180px;">
-              
-              <img src="./img/klappertar.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card" style="min-width: 180px; max-width: 180px;">
-              
-              <img src="./img/Puding.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card" style="min-width: 180px; max-width: 180px;">
-              
-              <img src="./img/klappertar.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div> -->
-
-        <!-- </div> -->
+        
       </div>
     </div>
   </div>
-  <script src="jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@master/dist/latest/bootstrap-autocomplete.min.js"></script>
+  
   <script src="script.js"></script>
 </body>
 

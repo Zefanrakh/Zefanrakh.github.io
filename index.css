@@ -78,6 +78,10 @@
 .card-img-overlay:hover {
   opacity: 0.5;
 }
+
+.modal-backdrop .fade {
+  z-index: 0 !important;
+}
 /* .gambarProduk {
   width: 286.5px;
   min-height: 180px;
