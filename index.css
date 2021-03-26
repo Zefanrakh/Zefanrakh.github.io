@@ -9,7 +9,7 @@
   z-index: 10;
 } */
 .overflow {
-  height: 500px;
+  height: 650px;
   overflow: hidden;
   position: relative;
   /* margin-top: 50px; */
@@ -22,24 +22,27 @@
 }
 #gambar1 {
   background-image: url(./img/bely2.jpg);
-  height: 900px;
+  height: 700px;
   width: 100vw;
+  margin-top: 126px;
   background-position: center;
   background-size: cover;
 }
 
 #gambar2 {
   background-image: url(./img/bely6.jpg);
-  height: 900px;
+  height: 700px;
   width: 100vw;
+  margin-top: 126px;
   background-position: center;
   background-size: cover;
 }
 
 #gambar3 {
   background-image: url(./img/bely5.jpg);
-  height: 900px;
+  height: 700px;
   width: 100vw;
+  margin-top: 126px;
   background-position: center;
   background-size: cover;
 }

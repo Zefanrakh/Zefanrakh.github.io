@@ -87,15 +87,39 @@ function clearCard() {
 
 function fixedTopacity(){
     let element = document.getElementsByClassName("navbar")[0];
+    let marginCaroussel1 = document.getElementById("gambar1");
+    let marginCaroussel2 = document.getElementById("gambar2");
+    let marginCaroussel3 = document.getElementById("gambar3");
+    let overflow = document.getElementsByClassName("overflow")[0];
     element.classList.add("fixed-top");
     element.style.opacity = "0.8";
+    marginCaroussel1.style.marginTop = "126px"
+    marginCaroussel2.style.marginTop = "126px"
+    marginCaroussel3.style.marginTop = "126px"
+    overflow.style.height = "650px"
+    // marginCaroussel1.style.height = "900px"
+    // marginCaroussel2.style.height = "900px"
+    // marginCaroussel3.style.height = "900px"
 }
 // Function 3: Read arrayShoppingCart untuk mengetahui sudah ada barang apa saja di shopping cart.
 function updateCart() {
     // let reset = document.getElementsByClassName("modal-backdrop")[0];
     let element = document.getElementsByClassName("navbar")[0];
+    let marginCaroussel1 = document.getElementById("gambar1");
+    let marginCaroussel2 = document.getElementById("gambar2");
+    let marginCaroussel3 = document.getElementById("gambar3");
+    let overflow = document.getElementsByClassName("overflow")[0];
     element.classList.remove("fixed-top");
     element.style.opacity = "1";
+    marginCaroussel1.style.marginTop = "0px"
+    marginCaroussel2.style.marginTop = "0px"
+    marginCaroussel3.style.marginTop = "0px"
+    overflow.style.height = "524px"
+    // marginCaroussel1.style.height = "774px"
+    // marginCaroussel2.style.height = "774px"
+    // marginCaroussel3.style.height = "774px"
+    
+    
     // console.log(reset)
     let domCart = document.getElementsByClassName("modal-body")[0];
     domCart.innerHTML = '';
