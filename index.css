@@ -79,8 +79,8 @@
   opacity: 0.5;
 }
 
-.modal-backdrop .fade {
-  z-index: 0 !important;
+.fixed-top {
+  opacity: 0.8;
 }
 /* .gambarProduk {
   width: 286.5px;

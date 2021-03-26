@@ -85,10 +85,17 @@ function clearCard() {
     konten.innerHTML = ''
 }
 
+function fixedTopacity(){
+    let element = document.getElementsByClassName("navbar")[0];
+    element.classList.add("fixed-top");
+    element.style.opacity = "0.8";
+}
 // Function 3: Read arrayShoppingCart untuk mengetahui sudah ada barang apa saja di shopping cart.
 function updateCart() {
     // let reset = document.getElementsByClassName("modal-backdrop")[0];
-
+    let element = document.getElementsByClassName("navbar")[0];
+    element.classList.remove("fixed-top");
+    element.style.opacity = "1";
     // console.log(reset)
     let domCart = document.getElementsByClassName("modal-body")[0];
     domCart.innerHTML = '';
